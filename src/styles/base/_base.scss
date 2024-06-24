@@ -1,0 +1,45 @@
+@import "reset";
+@import "../../fonts/fonts";
+
+.container {
+	width: 100%;
+	max-width: 360px;
+	padding: 0 16px;
+	margin: 0 auto;
+	@media (width>=430px) {
+		max-width: 400px;
+		padding: 0 15px;
+	}
+
+	@media (width>=768px) {
+		max-width: 760px;
+		padding: 0 30px;
+	}
+
+	@media (width>=1024px) {
+		max-width: 1040px;
+		padding: 0 56px;
+	}
+}
+
+body {
+	font-family: "Gilroy", sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	height: 100%;
+	color: #fff;
+}
+
+.wrapper {
+	background: linear-gradient(to bottom, #242731, #332f65);
+	padding-bottom: 50px;
+	@media (width>=768px) {
+		background: radial-gradient(
+				circle at top left,
+				#332f65,
+				transparent 600px
+			),
+			radial-gradient(circle at top right, #332f65, transparent 900px),
+			linear-gradient(to bottom, #242731, #242731);
+	}
+}
